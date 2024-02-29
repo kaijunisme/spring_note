@@ -1,0 +1,5 @@
+netty:
+  host: localhost
+  port: 9001
+  boss: 1
+  worker: 4
