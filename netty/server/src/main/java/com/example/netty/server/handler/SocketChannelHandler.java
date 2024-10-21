@@ -1,14 +1,11 @@
 package com.example.netty.server.handler;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
+import org.springframework.stereotype.Service;
+
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
-import java.nio.charset.StandardCharsets;
-import java.time.LocalDateTime;
-import org.springframework.stereotype.Service;
 
 @Service
 public class SocketChannelHandler extends SimpleChannelInboundHandler<String> {
